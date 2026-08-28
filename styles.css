@@ -1,0 +1,79 @@
+        /* Reset básico */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Fondo blanco roto/crema muy suave para calidez */
+            background-color: #FDFBF7; 
+            font-family: 'Nunito', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Contenedor principal estilizado */
+        .tarjeta-perfil {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 30px;
+            border-radius: 20px;
+            /* Sombra suave y borde dorado fino para un toque elegante y acogedor */
+            box-shadow: 0 10px 25px rgba(212, 163, 115, 0.15);
+            border: 2px solid #D4A373; /* Tono arena/dorado suave */
+            max-width: 350px; /* Ancho controlado */
+            width: 100%;
+        }
+
+        /* Contenedor para la imagen completa */
+        .contenedor-foto {
+            width: 100%;
+            height: 400px; 
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+        }
+
+        /* Estilos de la imagen para que se vea completa */
+        .foto-completa {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; 
+        }
+
+        /* Texto principal (Nombre) - Tamaño aumentado */
+        .nombre {
+            font-size: 2.2rem; /* Aumentado considerablemente */
+            font-weight: 700;
+            color: #2C3E50; 
+            margin-bottom: 8px;
+        }
+
+        /* Texto secundario (Número) - Tamaño aumentado */
+        .numero {
+            font-size: 1.5rem; /* Aumentado considerablemente */
+            font-weight: 1000;
+            color: #2C3E50; 
+        }
+
+        /* Diseño responsivo para pantallas pequeñas */
+        @media (max-width: 400px) {
+            .tarjeta-perfil {
+                padding: 20px;
+            }
+            .contenedor-foto {
+                height: 300px; 
+            }
+            .nombre {
+                font-size: 1.8rem; /* Ajuste proporcional para móviles */
+            }
+            .numero {
+                font-size: 1.3rem; /* Ajuste proporcional para móviles */
+            }
+        }
