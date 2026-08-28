@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset básico */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Fondo crema muy suave para mantener la calidez */
+            background-color: #FDFBF7; 
+            font-family: 'Nunito', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Contenedor principal estilo tarjeta amplia */
+        .contenedor-menu {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(212, 163, 115, 0.15);
+            border: 2px solid #D4A373;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .titulo {
+            font-size: 2.2rem;
+            color: #2C3E50;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        /* Cuadrícula para organizar los botones */
+        .cuadricula-botones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        /* Estilo de los botones */
+        .boton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background-color: #FFFFFF;
+            color: #D4A373;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 15px 10px;
+            border-radius: 12px;
+            border: 2px solid #D4A373;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(212, 163, 115, 0.1);
+        }
+
+        /* Efecto al pasar el mouse por encima del botón */
+        .boton:hover {
+            background-color: #D4A373;
+            color: #FFFFFF;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(212, 163, 115, 0.25);
+        }
+
+        /* Un estilo ligeramente distinto para la página "trampa" */
+        .boton-trampa {
+            border-color: #E74C3C;
+            color: #E74C3C;
+        }
+
+        .boton-trampa:hover {
+            background-color: #E74C3C;
+            color: #FFFFFF;
+            box-shadow: 0 8px 15px rgba(231, 76, 60, 0.25);
+        }
+
+        /* Responsivo para móviles */
+        @media (max-width: 480px) {
+            .contenedor-menu {
+                padding: 25px 20px;
+            }
+            .titulo {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+            .cuadricula-botones {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-menu">
+        <h1 class="titulo">Índice de Páginas</h1>
+        
+        <div class="cuadricula-botones">
+            <a href="aser.html" class="boton">Aser</a>
+            <a href="benjamin.html" class="boton">Benjamín</a>
+            <a href="dan.html" class="boton">Dan</a>
+            <a href="gad.html" class="boton">Gad</a>
+            <a href="isacar.html" class="boton">Isacar</a>
+            <a href="jose.html" class="boton">José</a>
+            <a href="juda.html" class="boton">Judá</a>
+            <a href="levi.html" class="boton">Leví</a>
+            <a href="neftali.html" class="boton">Neftalí</a>
+            <a href="ruben.html" class="boton">Rubén</a>
+            <a href="simeon.html" class="boton">Simeón</a>
+            <a href="zabulon.html" class="boton">Zabulón</a>
+            
+            <a href="trampa.html" class="boton boton-trampa">Trampa</a>
+        </div>
+    </div>
+
+</body>
+</html>
